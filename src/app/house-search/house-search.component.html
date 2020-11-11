@@ -1,0 +1,17 @@
+
+<div id="search">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Search by Name:</mat-label>
+      <input name="serchName" [(ngModel)]="searchName" matInput #message maxlength="40" placeholder="Ex.'Apartament'...">
+    </mat-form-field>
+
+    <button (click)="searchHousesByName()" mat-flat-button color="primary">Search</button>
+
+  </form>
+  <mat-list role="list">
+    <mat-list-item *ngFor="let house of housesResults" role="listitem">{{house.id}} {{house.name}} {{house.price}}</mat-list-item>
+  </mat-list>
+
+</div>
+

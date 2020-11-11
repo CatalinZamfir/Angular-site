@@ -1,0 +1,25 @@
+<div id="list">
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input  name="name" [(ngModel)]="house.name" matInput  maxlength="50" placeholder="Name of the add">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <input name="description" [(ngModel)]="house.description" matInput  maxlength="200" placeholder="Description of the add">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Image Url</mat-label>
+    <input name="imageUrl" [(ngModel)]="house.imageUrl" matInput placeholder="Url of image">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Price euro/mp</mat-label>
+    <input name="price" [(ngModel)]="house.price" type="number" matInput  maxlength="200" placeholder="Price">
+  </mat-form-field>
+  </form>
+
+  <button (click)="addHouse()" mat-raised-button color="primary">Add House</button>
+</div>

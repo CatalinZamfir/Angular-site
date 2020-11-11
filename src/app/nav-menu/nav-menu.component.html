@@ -1,0 +1,10 @@
+<div>
+
+<button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button routerLink="" mat-menu-item>Houses list</button>
+  <button routerLink="/add-house" mat-menu-item>Add new House</button>
+  <button routerLink="/search-house" mat-menu-item>Search by Name</button>
+</mat-menu>
+
+</div>
