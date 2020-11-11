@@ -1,5 +1,5 @@
 <mat-card class="example-card">
-  <img mat-card-image src="{{house.imageUrl}}" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="{{house.imageUrl}}" alt="Photo of...">
   <mat-card-content>
     <b>{{house.name}}</b>
     <p>
@@ -13,3 +13,5 @@
   </mat-card-actions>
 </mat-card>
 
+
+<app-address-view [address]="house.address"></app-address-view>

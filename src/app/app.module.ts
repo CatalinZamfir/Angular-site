@@ -17,6 +17,7 @@ import { HouseViewComponent } from './house-view/house-view.component';
 import { HouseSearchComponent } from './house-search/house-search.component';
 import {MatListModule} from '@angular/material/list';
 import { HouseEditComponent } from './house-edit/house-edit.component';
+import { AddressViewComponent } from './address-view/address-view.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HouseEditComponent } from './house-edit/house-edit.component';
     HouseNewComponent,
     HouseViewComponent,
     HouseSearchComponent,
-    HouseEditComponent
+    HouseEditComponent,
+    AddressViewComponent
   ],
   imports: [
     BrowserModule,
