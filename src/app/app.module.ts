@@ -16,6 +16,7 @@ import {FormsModule} from '@angular/forms';
 import { HouseViewComponent } from './house-view/house-view.component';
 import { HouseSearchComponent } from './house-search/house-search.component';
 import {MatListModule} from '@angular/material/list';
+import { HouseEditComponent } from './house-edit/house-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatListModule} from '@angular/material/list';
     HouseListComponent,
     HouseNewComponent,
     HouseViewComponent,
-    HouseSearchComponent
+    HouseSearchComponent,
+    HouseEditComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,10 @@
   <mat-card-actions>
     <button routerLink="house-view/{{house.id}}" mat-button>View</button>
     <button mat-button>Call</button>
+
+    <button (click)="removeAdd(house.id)" mat-button>DELETE</button>
+    <button routerLink="house-edit/{{house.id}}" mat-button>EDIT</button>
+
   </mat-card-actions>
 </mat-card>
 </div>
