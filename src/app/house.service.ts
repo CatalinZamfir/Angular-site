@@ -44,6 +44,17 @@ export class HouseService {
     return  of(houseResults);
   }
 
+  deleteHouseById(id: number): Observable<HouseAdd>{
+    this.houses = this.houses.filter(house => house.id !== id);
+    return of(null);
+  }
+
+  update(houseToUpdated: HouseAdd): Observable<any>{
+    this.deleteHouseById(houseToUpdated.id);
+    this.houses.push(houseToUpdated);
+    return of(null);
+  }
+
   getHouseId(id: number): Observable<HouseAdd>{
     for (const house of this.houses){
       if (house.id === id){

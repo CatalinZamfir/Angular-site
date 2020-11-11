@@ -20,4 +20,10 @@ export class HouseListComponent implements OnInit {
 
   }
 
+  removeAdd(id: number): void {
+    this.houseService.deleteHouseById(id).subscribe(succes => {
+      console.log('The article has been deleted: ' + id);
+      this.ngOnInit();
+    });
+  }
 }
