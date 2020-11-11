@@ -15,6 +15,10 @@ export class HouseService {
     houseOne.description = 'Ap de 3 cam in Floresti, zona Muzeul Apei. Apartamentul este format din 2 dormitoare, living cu bucatarie, baie, hol, balcon, etaj 2, este situat intr-o zona aerisita, linistita usor accesibila fata de statia de autobuz. Parcare exterioara in fata blocului. ';
     houseOne.price = 300;
     houseOne.imageUrl = 'https://img3.imonet.ro/XAG0/AG000JTPP5C/apartament-de-vanzare-2-camere-bucuresti-drumul-taberei-135356042_330x248.jpg';
+    houseOne.address.country = 'Romania';
+    houseOne.address.city = 'Pitesti';
+    houseOne.address.street = 'Str. Libertatii';
+    houseOne.address.postalCode = 100558;
     this.houses.push(houseOne);
 
     const houseTwo: HouseAdd = new HouseAdd();
@@ -23,6 +27,10 @@ export class HouseService {
     houseTwo.description = 'Proprietar ofer spre vanzare apartament cu 2 camere. Nu sunt interesat de agenții imobiliare. Situat la periferie';
     houseTwo.price = 240;
     houseTwo.imageUrl = 'https://img2.imonet.ro/X982/98200H54JI6/apartament-de-vanzare-2-camere-bucuresti-ilfov-bucuresti-129678510.jpg';
+    houseTwo.address.country = 'Romania';
+    houseTwo.address.city = 'Bucuresti';
+    houseTwo.address.street = 'Str. Garii';
+    houseTwo.address.postalCode = 120560;
     this.houses.push(houseTwo);
   }
   getHouses(): Observable<HouseAdd[]> {
